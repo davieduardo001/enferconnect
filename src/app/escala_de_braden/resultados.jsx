@@ -4,9 +4,9 @@ import Button from '../../components/Button'
 export default function App() {
   return (
     <View style={styles.container}>
-        <Text>tela escala de braden</Text>
+        <Text>RESULTADOS</Text>
 
-        <Button texto='sim' link='escala_de_braden/resultados'/>
+        <Button texto='sim' link=''/>
     </View>
   );
 }

@@ -7,12 +7,12 @@ export default function App() {
     <View style={styles.container}>
         <View style={styles.header}>
             <Image source={require('../images/lampada_logo.jpg')} style={styles.imagemLogo}/>
-            <Text>TESTE</Text>
+            <Text>MAIN</Text>
         </View>
 
         <Text>OLA MUNDO</Text>
 
-        <Button texto='Escala de teste' link='escala_de_braden/'/>
+        <Button texto='Escala de teste' link='escala_de_braden'/>
     </View>
   );
 }
