@@ -1,12 +1,12 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
-import Button from '../../components/Button'
+// import Button from '../../components/BotaoBranco'
 
 export default function App() {
   return (
     <View style={styles.container}>
         <Text>RESULTADOS</Text>
 
-        <Button texto='sim' link=''/>
+        {/* <Button texto='sim' link=''/> */}
     </View>
   );
 }
