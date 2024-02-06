@@ -1,13 +1,11 @@
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, View, Image } from 'react-native';
 import {BotaoAzul, BotaoBranco} from '../components/BotoesMain';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <View style={styles.pagina_inicial}>
 
       {/* HEADER */}
-
-
       <View style={styles.header}>
         <Image source={require('../images/logo.jpg')} />
         <Image source={require('../images/logo_txt.png')} style={{ marginLeft: 20 }} />
@@ -27,7 +25,7 @@ export default function App() {
       {/***********************************************/}
       <View style={styles.botoesContainer}>
         <BotaoAzul texto='Escala de teste' link='escala_de_braden' />
-        <BotaoBranco texto='Escala de morse' link='escala_de_braden'/>
+        <BotaoBranco texto='Escala de morse' link='escala_de_morse'/>
       </View>
 
     </View>
@@ -35,7 +33,7 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  pagina_inicial: {
     flex: 1,
     backgroundColor: '#FAF7F7',
     alignItems: 'center',

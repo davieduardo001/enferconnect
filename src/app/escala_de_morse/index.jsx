@@ -11,12 +11,12 @@ export default function App() {
           </TouchableOpacity>
         </Link>
 
-        <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#1A998E', marginHorizontal: 40 }}>ESCALA DE BRADEN</Text>
+        <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#1A998E', marginHorizontal: 40 }}>ESCALA DE MORSE</Text>
       </View>
 
       <View style={styles.content}>
 
-        <Text>tela escala de braden</Text>
+        <Text>tela escala de morse</Text>
 
         {/* ADICIONAR DPS OS FORMS... */}
       </View>
