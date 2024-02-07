@@ -1,5 +1,5 @@
 import { StyleSheet, View, Image } from 'react-native';
-import {BotaoAzul, BotaoBranco} from '../components/BotoesMain';
+import { BotaoAzul, BotaoBranco } from '../components/BotoesMain';
 
 export default function App() {
   return (
@@ -13,8 +13,11 @@ export default function App() {
 
       {/* CONTEUDO MAIN */}
 
-      {/* Imagem central */}
-      <Image source={require('../images/enfermeira.png')} />
+      <View style={{flex: 12, width: '100%'}}>
+        {/* Imagem central */}
+        <Image source={require('../images/enfermeira.png')} style={{height: '100%', width: '100%'}} />
+      </View>
+
 
       {/*************************************************
             area para os botoes de 
@@ -25,7 +28,7 @@ export default function App() {
       {/***********************************************/}
       <View style={styles.botoesContainer}>
         <BotaoAzul texto='Escala de teste' link='escala_de_braden' />
-        <BotaoBranco texto='Escala de morse' link='escala_de_morse'/>
+        <BotaoBranco texto='Escala de morse' link='escala_de_morse' />
       </View>
 
     </View>
@@ -48,10 +51,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   botoesContainer: {
-    flex: 3,
+    flex: 2,
     flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
     backgroundColor: '#fff',
-    width: 400,
-    paddingBottom: 20,
+    width: '100%',
   }
 });
