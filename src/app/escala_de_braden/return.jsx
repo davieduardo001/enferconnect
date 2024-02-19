@@ -7,7 +7,7 @@ export default function App() {
     <View style={styles.container}>
 
       {/* CABECALHO */}
-      <Cabecalho text="Retorno da escala de braden" nextPage='escala_de_braden'/>
+      <Cabecalho text="Retorno da escala de braden" nextPage='escala_de_braden' />
 
       {/* CONTEUDO PRINCIAL */}
       <View style={styles.content}>

@@ -13,9 +13,9 @@ export default function App() {
 
       {/* CONTEUDO MAIN */}
 
-      <View style={{flex: 12, width: '100%'}}>
+      <View style={{ flex: 12, width: '100%' }}>
         {/* Imagem central */}
-        <Image source={require('../images/enfermeira.png')} style={{height: '100%', width: '100%'}} />
+        <Image source={require('../images/enfermeira.png')} style={{ height: '100%', width: '100%' }} />
       </View>
 
 

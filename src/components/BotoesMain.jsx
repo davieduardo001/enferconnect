@@ -3,7 +3,7 @@ import { Link } from 'expo-router'
 
 /*
     botoes utilizados dentro da pagina inicial e para a passagem de pagina
-    
+
     itens dentro deste componente:
       * botao para navegacao com a cor branca (BotaoBranco)
       * botao de navegacao com a cor azul (BotaoAzul)
@@ -73,7 +73,7 @@ export function Cancelar({ link }) {
   return (
     <Link href={link} asChild>
       <TouchableOpacity>
-        
+
         {/* texto do botao */}
         <Text style={{
           color: 'black',

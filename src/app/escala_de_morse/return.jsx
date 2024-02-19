@@ -7,7 +7,7 @@ export default function App() {
     <View style={styles.container}>
 
       {/* CABECALHO */}
-      <Cabecalho text="Retorno da escala de morse" nextPage='escala_de_morse'/>
+      <Cabecalho text="Retorno da escala de morse" nextPage='escala_de_morse' />
 
       {/* CONTEUDO PRINCIAL */}
       <View style={styles.content}>
