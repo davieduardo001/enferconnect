@@ -1,7 +1,7 @@
-import { Text, TouchableOpacity, View, StyleSheet } from 'react-native';
-import { Link } from 'expo-router';
-import { useState } from 'react';
-import { Cancelar } from './BotoesMain';
+import { Text, TouchableOpacity, View, StyleSheet } from 'react-native'
+import { Link } from 'expo-router'
+import { useState } from 'react'
+import { Cancelar } from './BotoesMain'
 
 /*
     cabecalho utilizado entre as telas de formulario
@@ -14,7 +14,7 @@ export default function Cabecalho({ text, nextPage }) {
         <View style={styles.header}>
             <Cancelar link=''/>
             <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#1A998E', marginHorizontal: 40 }}>{text}</Text>
-        
+
             <Link href={nextPage}>
                 <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#1A998E', marginHorizontal: 40 }} > {returnText} </Text>
             </Link>

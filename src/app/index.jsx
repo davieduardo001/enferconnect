@@ -1,5 +1,5 @@
-import { StyleSheet, View, Image } from 'react-native';
-import { BotaoAzul, BotaoBranco } from '../components/BotoesMain';
+import { StyleSheet, View, Image } from 'react-native'
+import { BotaoAzul, BotaoBranco } from '../components/BotoesMain'
 
 export default function App() {
   return (

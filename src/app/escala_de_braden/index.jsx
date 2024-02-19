@@ -1,7 +1,7 @@
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import { Link } from 'expo-router'
-import { useState, useEffect } from 'react';
-import Cabecalho from '../../components/Cabecalho';
+import { useState, useEffect } from 'react'
+import Cabecalho from '../../components/Cabecalho'
 
 export default function App() {
 
