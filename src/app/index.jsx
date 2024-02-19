@@ -27,7 +27,7 @@ export default function App() {
               * escala_de_morse/ 
       {/***********************************************/}
       <View style={styles.botoesContainer}>
-        <BotaoAzul texto='Escala de teste' link='escala_de_braden' />
+        <BotaoAzul texto='Escala de braden' link='escala_de_braden' />
         <BotaoBranco texto='Escala de morse' link='escala_de_morse' />
       </View>
 
