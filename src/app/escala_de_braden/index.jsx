@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TouchableOpacity, Button } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { Link } from 'expo-router'
 import { useState, useEffect } from 'react';
 import Cabecalho from '../../components/Cabecalho';
@@ -136,7 +136,6 @@ export default function App() {
       case 2:
         setIndividualPercepcaoSensorial(2)
         setTotalPercepcaoSensorial('Muito Limitado')
-
 
         // setando o botao atual
         setButton2(prevState => ({
@@ -674,5 +673,4 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
   }
-
 })
