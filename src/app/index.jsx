@@ -20,9 +20,9 @@ export default function App() {
 
           {/*****************************************/}
           {/* imagem e texto central */}
-          <View style={{ flex: 12, width: '100%' }}>
+          <View style={{ flex: 12, width: '100%', alignItems: 'center', justifyContent: 'center' }}>
             {/* Imagem central */}
-            <Image source={require('../images/enfermeira.png')} style={{width: '100%' }} />
+            <Image source={require('../images/enfermeira1.png')} style={{width: '100%', height: '100%' }} />
           
             {/* texto principal */}
             <View style={{alignItems: 'center'}}>

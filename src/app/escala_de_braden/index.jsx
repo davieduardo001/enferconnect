@@ -276,8 +276,8 @@ export default function App() {
   /////////////////////////////////////////////////
   // UMIDADE LOGICA
 
-  const [individualUmidade, setIndividualUmidade] = useState(1)
-  const [totalUmidade, setTotalUmidade] = useState('Sempre umida')
+  const [valorUmidade, setValorUmidade] = useState(1)
+  const [textoUmidade, setTextoUmidade] = useState('Sempre umida')
 
   // setando botao 1
   const [button1Umidade, setButton1Umidade] = useState({
@@ -361,8 +361,8 @@ export default function App() {
 
       // quando mudar para o botao 1
       case 1:
-        setIndividualUmidade(1)
-        setTotalUmidade('Sempre umido')
+        setValorUmidade(1)
+        setTextoUmidade('Sempre umido')
 
         // setando o botao atual
         setButton1Umidade(prevState => ({
@@ -405,8 +405,8 @@ export default function App() {
 
       // quando mudar para o botao 2
       case 2:
-        setIndividualUmidade(2)
-        setTotalUmidade('Muito Umido')
+        setValorUmidade(2)
+        setTextoUmidade('Muito Umido')
 
 
         // setando o botao atual
@@ -450,8 +450,8 @@ export default function App() {
 
       // quando mudar para o botao 3
       case 3:
-        setIndividualUmidade(3)
-        setTotalUmidade('Ligeiramente limitado')
+        setValorUmidade(3)
+        setTextoUmidade('Ocasionamente umido')
 
         // setando o botao atual
         setButton3Umidade(prevState => ({
@@ -494,8 +494,8 @@ export default function App() {
 
       // quando mudar para o botao 4
       case 4:
-        setIndividualUmidade(4)
-        setTotalUmidade('Raramente umido')
+        setValorUmidade(4)
+        setTextoUmidade('Raramente umido')
 
         // setando o botao atual
         setButton4Umidade(prevState => ({
@@ -564,8 +564,8 @@ export default function App() {
   }
 
   useEffect(() => {
-    atualizarTotalFinal(valorPercepcaoSensorial, individualUmidade)
-  }, [textoPercepcaoSensorial, totalUmidade])
+    atualizarTotalFinal(valorPercepcaoSensorial, valorUmidade)
+  }, [textoPercepcaoSensorial, textoUmidade])
   // LOGICA TOTAL
   /////////////////////////////////////////////////
   
@@ -658,7 +658,7 @@ export default function App() {
             {/*****************************************/}
 
             {/* resultado */}
-            <Text style={styles.formResultado}>{totalUmidade}</Text>
+            <Text style={styles.formResultado}>{textoUmidade}</Text>
 
           </View>
           {/*****************************************/}
