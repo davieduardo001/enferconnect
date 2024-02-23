@@ -1,4 +1,4 @@
-import { StyleSheet, View, Image } from 'react-native'
+import { StyleSheet, View, Image, Text } from 'react-native'
 import { BotaoAzul, BotaoBranco } from '../components/BotoesMain'
 
 export default function App() {
@@ -19,12 +19,18 @@ export default function App() {
       <View style={styles.conteudoPrincipal}>
 
           {/*****************************************/}
-          {/* imagem central */}
+          {/* imagem e texto central */}
           <View style={{ flex: 12, width: '100%' }}>
             {/* Imagem central */}
-            <Image source={require('../images/enfermeira.png')} style={{ height: '100%', width: '100%' }} />
+            <Image source={require('../images/enfermeira.png')} style={{width: '100%' }} />
+          
+            {/* texto principal */}
+            <View style={{alignItems: 'center'}}>
+              <Text style={{fontSize: 20, textAlign: 'justify', paddingHorizontal: 30, paddingBottom: 20, color: '#003137', }} > Entenda o risco de seus pacientes com precisão através da Escala de Braden️ ou da Escala de Morse. </Text>
+            </View>
+
           </View>
-          {/* imagem central */}
+          {/* imagem e texto central */}
           {/*****************************************/}
 
           {/*****************************************/}
