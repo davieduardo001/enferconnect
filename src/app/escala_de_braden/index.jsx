@@ -1,13 +1,15 @@
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native'
 import { Link } from 'expo-router'
 import { useState, useEffect } from 'react'
 import Cabecalho from '../../components/Cabecalho'
 
 export default function App() {
 
-  ////////////////// PERCEPCAO SENSORIAL LOGICA ////////////////////////
+  /////////////////////////////////////////////////
+  // PERCEPCAO SENSORIAL LOGICA
   const [individualPercepcaoSensorial, setIndividualPercepcaoSensorial] = useState(1)
   const [totalPercepcaoSensorial, setTotalPercepcaoSensorial] = useState('Totalmente Limitado')
+
   // setando botao 1
   const [button1, setButton1] = useState({
     width: 40,
@@ -268,8 +270,11 @@ export default function App() {
         break;
     }
   }
+  // PERCEPCAO SENSORIAL LOGICA
+  /////////////////////////////////////////////////
 
-  ////////////////// UMIDADE LOGICA ////////////////////////
+  /////////////////////////////////////////////////
+  // UMIDADE LOGICA
 
   const [individualUmidade, setIndividualUmidade] = useState(1)
   const [totalUmidade, setTotalUmidade] = useState('Sempre umida')
@@ -534,8 +539,11 @@ export default function App() {
         break;
     }
   }
+  // UMIDADE LOGICA
+  /////////////////////////////////////////////////
 
-  ////////////////// LOGICA TOTAL ////////////////////////
+  /////////////////////////////////////////////////
+  // LOGICA TOTAL
   const [totalFinal, setTotalFinal] = useState()
   const [outputFinal, setOutputFinal] = useState('')
 
@@ -557,29 +565,37 @@ export default function App() {
   useEffect(() => {
     atualizarTotalFinal(individualPercepcaoSensorial, individualUmidade)
   }, [totalPercepcaoSensorial, totalUmidade])
-
-  ////////////////// SCREEN RENDER ////////////////////////
+  // LOGICA TOTAL
+  /////////////////////////////////////////////////
+  
+  /////////////////////////////////////////////////
+  // RENDENIZACACAO
   return (
     <View style={styles.container}>
 
+      {/*****************************************/}
       {/* CABECALHO */}
       <Cabecalho text="ESCALA DE BRADEN" nextPage='escala_de_braden/return' />
-
+      {/* CABECALHO */}
+      {/*****************************************/}
+      
+      {/*****************************************/}
       {/* CONTEUDO PRINCIPAL */}
       <View style={styles.content}>
 
-        {/* formulario inicio container */}
-        <View style={styles.formulario}>
+        {/*****************************************/}
+        {/* formulario */}
+        <ScrollView>
 
-          {/* ******************************************************************* */}
-          {/* inicio formulario individual */}
+          {/*****************************************/}
+          {/* percepcao sensorial form */}
           <View style={{ alignItems: 'center', marginBottom: 20 }}>
 
-            {/* label do formulario */}
-            <Text style={{ fontSize: 15, fontWeight: 'bold' }}>Percepcao sensorial</Text>
+            {/* label */}
+            <Text style={styles.formLabel}>Percepcao sensorial</Text>
 
-            {/* botoes do formulario inicio 
-            contem os botoes referentes ao label do formulario*/}
+            {/*****************************************/}
+            {/* botoes do formulario */}
             <View style={{ flexDirection: 'row' }}>
 
               <TouchableOpacity style={button1} onPress={() => changeButton(1)}>
@@ -599,21 +615,22 @@ export default function App() {
                 <Text style={button4Text}>4</Text>
               </TouchableOpacity>
             </View>
-            {/* botoes do formulario, final */}
+            {/* botoes do formulario */}
+            {/*****************************************/}
 
+            {/* resultado */}
+            <Text style={styles.formResultado}>{totalPercepcaoSensorial}</Text>
 
-            {/* resultado do form individual */}
-            <Text style={{ fontSize: 14 }}>{totalPercepcaoSensorial}</Text>
-
-            {/* final formulario individual */}
           </View>
+          {/*****************************************/}
+          {/* percepcao sensorial form */}
 
-          {/* ******************************************************************* */}
-          {/* inicio formulario individual */}
-          <View style={{ alignItems: 'center' }}>
+          {/*****************************************/}
+          {/* umidade form */}
+          <View style={styles.formInputs}>
 
             {/* label do formulario */}
-            <Text style={{ fontSize: 15, fontWeight: 'bold' }}>Umidade</Text>
+            <Text style={styles.formLabel}>Umidade</Text>
 
             {/* botoes do formulario inicio
             contem os botoes referentes ao label do formulario*/}
@@ -638,22 +655,26 @@ export default function App() {
             </View>
             {/* botoes do formulario, final */}
 
-
             {/* resultado do form individual */}
-            <Text style={{ fontSize: 14 }}>{totalUmidade}</Text>
+            <Text style={styles.formResultado}>{totalUmidade}</Text>
 
-            {/* final formulario individual */}
           </View>
-          {/* final formulario */}
-        </View>
+          {/*****************************************/}
+          {/* umidade form */}
+          
+        </ScrollView>
+        {/* formulario */}
+        {/*****************************************/}
 
         {/* resultado final container */}
         <View style={{ justifyContent: 'center', alignItems: 'center', paddingBottom: 20 }}>
           <Text style={{ fontSize: 14, fontWeight: 'bold' }}>Total: {totalFinal} - {outputFinal}</Text>
         </View>
       </View>
-    </View>
-  );
+    </View>  
+  )
+  // RENDENIZACACAO
+  /////////////////////////////////////////////////
 }
 
 const styles = StyleSheet.create({
@@ -672,5 +693,20 @@ const styles = StyleSheet.create({
   formulario: {
     flex: 1,
     alignItems: 'center',
+  },
+
+  formInputs: { 
+    alignItems: 'center', 
+    marginTop: 10 
+  },
+
+  formLabel: { 
+    fontSize: 15, 
+    fontWeight: 'bold'
+  },
+
+  formResultado: { 
+    fontSize: 14, 
+    color: '#555843'
   }
 })
