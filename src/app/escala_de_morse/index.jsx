@@ -7,7 +7,8 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-
+      
+      {/*****************************************/}
       {/* CABECALHO */}
       <Cabecalho text="ESCALA DE BRADEN" nextPage='escala_de_braden/return' />
 
