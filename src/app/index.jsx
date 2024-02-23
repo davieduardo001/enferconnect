@@ -5,32 +5,50 @@ export default function App() {
   return (
     <View style={styles.pagina_inicial}>
 
-      {/* HEADER */}
+      {/*****************************************/}
+      {/* CABECALHO */}
       <View style={styles.header}>
         <Image source={require('../images/logo.jpg')} />
         <Image source={require('../images/logo_txt.png')} style={{ marginLeft: 20 }} />
       </View>
+      {/* CABECALHO */}   
+      {/*****************************************/}
 
+      {/*****************************************/}
       {/* CONTEUDO MAIN */}
+      <View style={styles.conteudoPrincipal}>
 
-      <View style={{ flex: 12, width: '100%' }}>
-        {/* Imagem central */}
-        <Image source={require('../images/enfermeira.png')} style={{ height: '100%', width: '100%' }} />
+          {/*****************************************/}
+          {/* imagem central */}
+          <View style={{ flex: 12, width: '100%' }}>
+            {/* Imagem central */}
+            <Image source={require('../images/enfermeira.png')} style={{ height: '100%', width: '100%' }} />
+          </View>
+          {/* imagem central */}
+          {/*****************************************/}
+
+          {/*****************************************/}
+          {/* container dos botoes */}
+          <View style={styles.botoesContainer}>
+
+            {/*****************************************
+                Area para os botoes de direcionamento
+                ira redirecionar o usuario para as telas
+                seguintes:
+                  * escala_de_braden/
+                  * escala_de_morse/ 
+            *****************************************/}
+            
+            <BotaoAzul texto='Escala de braden' link='escala_de_braden' />
+            <BotaoBranco texto='Escala de morse' link='escala_de_morse' />
+          </View>
+          {/* container dos botoes */}
+          {/*****************************************/}
+
       </View>
-
-
-      {/*************************************************
-            area para os botoes de 
-            redirecionamentos para as
-            telas de escala:
-              * escala_de_braden/
-              * escala_de_morse/ 
-      {/***********************************************/}
-      <View style={styles.botoesContainer}>
-        <BotaoAzul texto='Escala de braden' link='escala_de_braden' />
-        <BotaoBranco texto='Escala de morse' link='escala_de_morse' />
-      </View>
-
+      {/* CONTEUDO MAIN */}
+      {/*****************************************/}
+      
     </View>
   );
 }
@@ -42,20 +60,27 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
   header: {
     flex: 2,
     flexDirection: 'row',
     alignItems: 'center',
     width: '100%',
-    backgroundColor: '#fff',
+    backgroundColor: '#FFF',
     paddingHorizontal: 20,
   },
+
   botoesContainer: {
     flex: 2,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#FFF',
     width: '100%',
+  },
+
+  conteudoPrincipal: {
+    flex: 12, 
+    width: '100%'
   }
 });
