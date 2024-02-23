@@ -4,6 +4,9 @@ O modelo constitue de uma logica e uma visualizacao, para simplificacao termos g
 
 *obs: o ideal seria a criacao de um coponente proprio para tal...*
 
+**exemplo de input**
+![alt text](image.png)
+
 **modelo para a logica:**
 ```js
 const [valor, setValor] = useState(1)
@@ -319,3 +322,4 @@ switch (buttonId) {
     fontWeight: 'bold'
   },
 ```
+
