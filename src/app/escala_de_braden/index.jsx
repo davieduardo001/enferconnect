@@ -7,11 +7,11 @@ export default function App() {
 
   /////////////////////////////////////////////////
   // PERCEPCAO SENSORIAL LOGICA
-  const [individualPercepcaoSensorial, setIndividualPercepcaoSensorial] = useState(1)
-  const [totalPercepcaoSensorial, setTotalPercepcaoSensorial] = useState('Totalmente Limitado')
+  const [valorPercepcaoSensorial, setValorPercepcaoSensorial] = useState(1)
+  const [textoPercepcaoSensorial, setTextoPercepcaoSensorial] = useState('Totalmente Limitado')
 
   // setando botao 1
-  const [button1, setButton1] = useState({
+  const [button1PercepcaoSensorial, setButton1PercepcaoSensorial] = useState({
     width: 40,
     height: 40,
     marginHorizontal: 10,
@@ -23,14 +23,14 @@ export default function App() {
     alignItems: 'center',
     justifyContent: 'center'
   })
-  const [button1Text, setButton1Text] = useState({
+  const [button1TextPercepcaoSensorial, setButton1TextPercepcaoSensorial] = useState({
     color: '#F28585', // este ira mudar constantemente!!
     fontSize: 14,
     fontWeight: 'bold'
   })
 
   // setando botao 2
-  const [button2, setButton2] = useState({
+  const [button2PercepcaoSensorial, setButton2PercepcaoSensorial] = useState({
     width: 40,
     height: 40,
     marginHorizontal: 10,
@@ -42,14 +42,14 @@ export default function App() {
     alignItems: 'center',
     justifyContent: 'center'
   })
-  const [button2Text, setButton2Text] = useState({
+  const [button2TextPercepcaoSensorial, setButton2TextPercepcaoSensorial] = useState({
     color: '#fff',
     fontSize: 14,
     fontWeight: 'bold'
   })
 
   // setando botao 3
-  const [button3, setButton3] = useState({
+  const [button3PercepcaoSensorial, setButton3PercepcaoSensorial] = useState({
     width: 40,
     height: 40,
     marginHorizontal: 10,
@@ -61,14 +61,14 @@ export default function App() {
     alignItems: 'center',
     justifyContent: 'center'
   })
-  const [button3Text, setButton3Text] = useState({
+  const [button3TextPercepcaoSensorial, setButton3TextPercepcaoSensorial] = useState({
     color: '#fff',
     fontSize: 14,
     fontWeight: 'bold'
   })
 
   // setando botao 4
-  const [button4, setButton4] = useState({
+  const [button4PercepcaoSensorial, setButton4PercepcaoSensorial] = useState({
     width: 40,
     height: 40,
     marginHorizontal: 10,
@@ -80,55 +80,55 @@ export default function App() {
     alignItems: 'center',
     justifyContent: 'center'
   })
-  const [button4Text, setButton4Text] = useState({
+  const [button4TextPercepcaoSensorial, setButton4TextPercepcaoSensorial] = useState({
     color: '#fff',
     fontSize: 14,
     fontWeight: 'bold'
   })
 
   // lidar com a troca dos botoes
-  const changeButton = (buttonId) => {
+  const changeButtonPercepcaoSensorial = (buttonId) => {
     switch (buttonId) {
 
       // quando mudar para o botao 1
       case 1:
-        setIndividualPercepcaoSensorial(1)
-        setTotalPercepcaoSensorial('Completamente limitado')
+        setValorPercepcaoSensorial(1)
+        setTextoPercepcaoSensorial('Completamente limitado')
 
         // setando o botao atual
-        setButton1(prevState => ({
+        setButton1PercepcaoSensorial(prevState => ({
           ...prevState,
           backgroundColor: '#fff'
         }))
-        setButton1Text(prevState => ({
+        setButton1TextPercepcaoSensorial(prevState => ({
           ...prevState,
           color: '#F28585'
         }))
 
         // setando os botoes ao original
-        setButton2(prevState => ({
+        setButton2PercepcaoSensorial(prevState => ({
           ...prevState,
           backgroundColor: '#FFA447'
         }))
-        setButton2Text(prevState => ({
+        setButton2TextPercepcaoSensorial(prevState => ({
           ...prevState,
           color: '#fff'
         }))
 
-        setButton3(prevState => ({
+        setButton3PercepcaoSensorial(prevState => ({
           ...prevState,
           backgroundColor: '#9ADE7B'
         }))
-        setButton3Text(prevState => ({
+        setButton3TextPercepcaoSensorial(prevState => ({
           ...prevState,
           color: '#fff'
         }))
 
-        setButton4(prevState => ({
+        setButton4PercepcaoSensorial(prevState => ({
           ...prevState,
           backgroundColor: '#186F65'
         }))
-        setButton4Text(prevState => ({
+        setButton4TextPercepcaoSensorial(prevState => ({
           ...prevState,
           color: '#fff'
         }))
@@ -136,43 +136,43 @@ export default function App() {
 
       // quando mudar para o botao 2
       case 2:
-        setIndividualPercepcaoSensorial(2)
-        setTotalPercepcaoSensorial('Muito Limitado')
+        setValorPercepcaoSensorial(2)
+        setTextoPercepcaoSensorial('Muito Limitado')
 
         // setando o botao atual
-        setButton2(prevState => ({
+        setButton2PercepcaoSensorial(prevState => ({
           ...prevState,
           backgroundColor: '#fff'
         }))
-        setButton2Text(prevState => ({
+        setButton2TextPercepcaoSensorial(prevState => ({
           ...prevState,
           color: '#FFA447'
         }))
 
         // setando os botoes ao original
-        setButton1(prevState => ({
+        setButton1PercepcaoSensorial(prevState => ({
           ...prevState,
           backgroundColor: '#F28585'
         }))
-        setButton1Text(prevState => ({
+        setButton1TextPercepcaoSensorial(prevState => ({
           ...prevState,
           color: '#fff'
         }))
 
-        setButton3(prevState => ({
+        setButton3PercepcaoSensorial(prevState => ({
           ...prevState,
           backgroundColor: '#9ADE7B'
         }))
-        setButton3Text(prevState => ({
+        setButton3TextPercepcaoSensorial(prevState => ({
           ...prevState,
           color: '#fff'
         }))
 
-        setButton4(prevState => ({
+        setButton4PercepcaoSensorial(prevState => ({
           ...prevState,
           backgroundColor: '#186F65'
         }))
-        setButton4Text(prevState => ({
+        setButton4TextPercepcaoSensorial(prevState => ({
           ...prevState,
           color: '#fff'
         }))
@@ -180,43 +180,43 @@ export default function App() {
 
       // quando mudar para o botao 3
       case 3:
-        setIndividualPercepcaoSensorial(3)
-        setTotalPercepcaoSensorial('Ligeiramente limitado')
+        setValorPercepcaoSensorial(3)
+        setTextoPercepcaoSensorial('Ligeiramente limitado')
 
         // setando o botao atual
-        setButton3(prevState => ({
+        setButton3PercepcaoSensorial(prevState => ({
           ...prevState,
           backgroundColor: '#fff'
         }))
-        setButton3Text(prevState => ({
+        setButton3TextPercepcaoSensorial(prevState => ({
           ...prevState,
           color: '#9ADE7B'
         }))
 
         // setando os botoes ao original
-        setButton1(prevState => ({
+        setButton1PercepcaoSensorial(prevState => ({
           ...prevState,
           backgroundColor: '#F28585'
         }))
-        setButton1Text(prevState => ({
+        setButton1TextPercepcaoSensorial(prevState => ({
           ...prevState,
           color: '#fff'
         }))
 
-        setButton2(prevState => ({
+        setButton2PercepcaoSensorial(prevState => ({
           ...prevState,
           backgroundColor: '#FFA447'
         }))
-        setButton2Text(prevState => ({
+        setButton2TextPercepcaoSensorial(prevState => ({
           ...prevState,
           color: '#fff'
         }))
 
-        setButton4(prevState => ({
+        setButton4PercepcaoSensorial(prevState => ({
           ...prevState,
           backgroundColor: '#186F65'
         }))
-        setButton4Text(prevState => ({
+        setButton4TextPercepcaoSensorial(prevState => ({
           ...prevState,
           color: '#fff'
         }))
@@ -224,43 +224,43 @@ export default function App() {
 
       // quando mudar para o botao 4
       case 4:
-        setIndividualPercepcaoSensorial(4)
-        setTotalPercepcaoSensorial('Sem limitacao')
+        setValorPercepcaoSensorial(4)
+        setTextoPercepcaoSensorial('Sem limitacao')
 
         // setando o botao atual
-        setButton4(prevState => ({
+        setButton4PercepcaoSensorial(prevState => ({
           ...prevState,
           backgroundColor: '#fff'
         }))
-        setButton4Text(prevState => ({
+        setButton4TextPercepcaoSensorial(prevState => ({
           ...prevState,
           color: '#186F65'
         }))
 
         // setando os botoes ao original
-        setButton1(prevState => ({
+        setButton1PercepcaoSensorial(prevState => ({
           ...prevState,
           backgroundColor: '#F28585'
         }))
-        setButton1Text(prevState => ({
+        setButton1TextPercepcaoSensorial(prevState => ({
           ...prevState,
           color: '#fff'
         }))
 
-        setButton2(prevState => ({
+        setButton2PercepcaoSensorial(prevState => ({
           ...prevState,
           backgroundColor: '#FFA447'
         }))
-        setButton2Text(prevState => ({
+        setButton2TextPercepcaoSensorial(prevState => ({
           ...prevState,
           color: '#fff'
         }))
 
-        setButton3(prevState => ({
+        setButton3PercepcaoSensorial(prevState => ({
           ...prevState,
           backgroundColor: '#9ADE7B'
         }))
-        setButton3Text(prevState => ({
+        setButton3TextPercepcaoSensorial(prevState => ({
           ...prevState,
           color: '#fff'
         }))
@@ -278,6 +278,7 @@ export default function App() {
 
   const [individualUmidade, setIndividualUmidade] = useState(1)
   const [totalUmidade, setTotalUmidade] = useState('Sempre umida')
+
   // setando botao 1
   const [button1Umidade, setButton1Umidade] = useState({
     width: 40,
@@ -563,8 +564,8 @@ export default function App() {
   }
 
   useEffect(() => {
-    atualizarTotalFinal(individualPercepcaoSensorial, individualUmidade)
-  }, [totalPercepcaoSensorial, totalUmidade])
+    atualizarTotalFinal(valorPercepcaoSensorial, individualUmidade)
+  }, [textoPercepcaoSensorial, totalUmidade])
   // LOGICA TOTAL
   /////////////////////////////////////////////////
   
@@ -589,7 +590,7 @@ export default function App() {
 
           {/*****************************************/}
           {/* percepcao sensorial form */}
-          <View style={{ alignItems: 'center', marginBottom: 20 }}>
+          <View style={styles.formInputs}>
 
             {/* label */}
             <Text style={styles.formLabel}>Percepcao sensorial</Text>
@@ -598,28 +599,28 @@ export default function App() {
             {/* botoes do formulario */}
             <View style={{ flexDirection: 'row' }}>
 
-              <TouchableOpacity style={button1} onPress={() => changeButton(1)}>
-                {/* este texto vai ser alterado e lido pelo use state constantemente */}
-                <Text style={button1Text}>1</Text>
+              <TouchableOpacity style={button1PercepcaoSensorial} onPress={() => changeButtonPercepcaoSensorial(1)}>
+                {/* este texto vai ser alterado e lido pelo useState constantemente */}
+                <Text style={button1TextPercepcaoSensorial}>1</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity style={button2} onPress={() => changeButton(2)}>
-                <Text style={button2Text}>2</Text>
+              <TouchableOpacity style={button2PercepcaoSensorial} onPress={() => changeButtonPercepcaoSensorial(2)}>
+                <Text style={button2TextPercepcaoSensorial}>2</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity style={button3} onPress={() => changeButton(3)}>
-                <Text style={button3Text}>3</Text>
+              <TouchableOpacity style={button3PercepcaoSensorial} onPress={() => changeButtonPercepcaoSensorial(3)}>
+                <Text style={button3TextPercepcaoSensorial}>3</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity style={button4} onPress={() => changeButton(4)}>
-                <Text style={button4Text}>4</Text>
+              <TouchableOpacity style={button4PercepcaoSensorial} onPress={() => changeButtonPercepcaoSensorial(4)}>
+                <Text style={button4TextPercepcaoSensorial}>4</Text>
               </TouchableOpacity>
             </View>
             {/* botoes do formulario */}
             {/*****************************************/}
 
             {/* resultado */}
-            <Text style={styles.formResultado}>{totalPercepcaoSensorial}</Text>
+            <Text style={styles.formResultado}>{textoPercepcaoSensorial}</Text>
 
           </View>
           {/*****************************************/}
@@ -629,15 +630,15 @@ export default function App() {
           {/* umidade form */}
           <View style={styles.formInputs}>
 
-            {/* label do formulario */}
+            {/* label */}
             <Text style={styles.formLabel}>Umidade</Text>
 
-            {/* botoes do formulario inicio
-            contem os botoes referentes ao label do formulario*/}
+            {/*****************************************/}
+            {/* botoes do formulario */}
             <View style={{ flexDirection: 'row' }}>
 
               <TouchableOpacity style={button1Umidade} onPress={() => changeButtonUmidade(1)}>
-                {/* este texto vai ser alterado e lido pelo use state constantemente */}
+                {/* este texto vai ser alterado e lido pelo useState constantemente */}
                 <Text style={button1TextUmidade}>1</Text>
               </TouchableOpacity>
 
@@ -653,9 +654,10 @@ export default function App() {
                 <Text style={button4TextUmidade}>4</Text>
               </TouchableOpacity>
             </View>
-            {/* botoes do formulario, final */}
+            {/* botoes do formulario */}
+            {/*****************************************/}
 
-            {/* resultado do form individual */}
+            {/* resultado */}
             <Text style={styles.formResultado}>{totalUmidade}</Text>
 
           </View>
@@ -666,17 +668,26 @@ export default function App() {
         {/* formulario */}
         {/*****************************************/}
 
+        {/*****************************************/}
         {/* resultado final container */}
         <View style={{ justifyContent: 'center', alignItems: 'center', paddingBottom: 20 }}>
           <Text style={{ fontSize: 14, fontWeight: 'bold' }}>Total: {totalFinal} - {outputFinal}</Text>
         </View>
+        {/*****************************************/}
+        {/* resultado final container */}
+
       </View>
+      {/* CONTEUDO PRINCIPAL */}
+      {/*****************************************/}
+      
     </View>  
   )
   // RENDENIZACACAO
   /////////////////////////////////////////////////
 }
 
+/////////////////////////////////////////////////
+// ESTILIZACAO
 const styles = StyleSheet.create({
   container: {
     flex: 1,
