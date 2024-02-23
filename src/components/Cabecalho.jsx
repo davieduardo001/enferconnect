@@ -13,10 +13,10 @@ export default function Cabecalho({ text, nextPage }) {
     return (
         <View style={styles.header}>
             <Cancelar link=''/>
-            <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#1A998E', marginHorizontal: 40 }}>{text}</Text>
+            <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#197D6D', marginHorizontal: 40 }}>{text}</Text>
 
             <Link href={nextPage}>
-                <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#1A998E', marginHorizontal: 40 }} > {returnText} </Text>
+                <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#197D6D', marginHorizontal: 40 }} > {returnText} </Text>
             </Link>
         </View>
     );
