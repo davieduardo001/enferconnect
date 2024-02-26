@@ -664,6 +664,9 @@ export default function App() {
           {/*****************************************/}
           {/* umidade form */}
           
+
+
+
         </ScrollView>
         {/* formulario */}
         {/*****************************************/}
