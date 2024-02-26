@@ -22,12 +22,12 @@ export default function App() {
           {/* imagem e texto central */}
           <View style={{ flex: 12, width: '100%', alignItems: 'center', justifyContent: 'center' }}>
             {/* Imagem central */}
-            <Image source={require('../images/enfermeira1.png')} style={{width: '100%', height: '100%' }} />
+            <Image source={require('../images/enfermeira1.png')} style={{width: '100%', height: '100%', paddingTop:750,}} />
           
             {/* texto principal */}
-            <View style={{alignItems: 'center'}}>
-              <Text style={{fontSize: 20, textAlign: 'justify', paddingHorizontal: 30, paddingBottom: 20, color: '#003137', }} > Entenda o risco de seus pacientes com precisão através da Escala de Braden️ ou da Escala de Morse. </Text>
-            </View>
+              {/*            <View style={{alignItems: 'center'}}>
+              <Text style={{fontSize: 20, textAlign: 'justify', paddingHorizontal: 30, paddingBottom: 90, color: '#003137', }} >Entenda o risco de seus pacientes com precisão através da Escala de Braden️ ou de Morse. </Text>
+            </View>*/}
 
           </View>
           {/* imagem e texto central */}
@@ -35,6 +35,11 @@ export default function App() {
 
           {/*****************************************/}
           {/* container dos botoes */}
+          <View style={styles.descricao}>
+          <View style={{alignItems: 'center'}}>
+              <Text style={{fontSize: 20, textAlign: 'justify', paddingHorizontal: 30, paddingBottom: 0, color: '#003137', }} >Entenda o risco de seus pacientes com precisão através da Escala de Braden️ ou de Morse. </Text>
+            </View>
+          </View>
           <View style={styles.botoesContainer}>
 
             {/*****************************************
@@ -76,6 +81,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
 
+  descricao:{
+    flexDirection: 'row',
+    alignItems: 'center',
+    width: '100%',
+    backgroundColor:'#fff',
+    height: 100,
+    },
+
   botoesContainer: {
     flex: 2,
     flexDirection: 'row',
@@ -83,10 +96,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#FFF',
     width: '100%',
+    paddingBottom: 20,
   },
 
   conteudoPrincipal: {
     flex: 12, 
-    width: '100%'
+    width: '100%',
   }
 });
