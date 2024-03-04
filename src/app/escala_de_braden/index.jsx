@@ -544,12 +544,280 @@ export default function App() {
   /////////////////////////////////////////////////
 
   /////////////////////////////////////////////////
+  // ATIVIDADE LOGICA
+  const [atividadeValor, setAtividadeValor] = useState(1)
+  const [atividadeTexto, setAtividadeTexto] = useState('Acamado')
+
+  // setando botao 1
+  const [button1Atividade, setButton1] = useState({
+    width: 40,
+    height: 40,
+    marginHorizontal: 10,
+    marginVertical: 20,
+    borderRadius: 10,
+    backgroundColor: '#fff', // este vai ser mudado constantemente :P
+    borderColor: '#F28585',
+    borderWidth: 2,
+    alignItems: 'center',
+    justifyContent: 'center'
+  })
+  const [button1TextAtividade, setButton1Text] = useState({
+    color: '#F28585', // este ira mudar constantemente!!
+    fontSize: 14,
+    fontWeight: 'bold'
+  })
+
+  // setando botao 2
+  const [button2Atividade, setButton2] = useState({
+    width: 40,
+    height: 40,
+    marginHorizontal: 10,
+    marginVertical: 20,
+    borderRadius: 10,
+    backgroundColor: '#FFA447',
+    borderColor: '#FFA447',
+    borderWidth: 2,
+    alignItems: 'center',
+    justifyContent: 'center'
+  })
+  const [button2TextAtividade, setButton2Text] = useState({
+    color: '#fff',
+    fontSize: 14,
+    fontWeight: 'bold'
+  })
+
+  // setando botao 3
+  const [button3Atividade, setButton3] = useState({
+    width: 40,
+    height: 40,
+    marginHorizontal: 10,
+    marginVertical: 20,
+    borderRadius: 10,
+    backgroundColor: '#9ADE7B',
+    borderColor: '#9ADE7B',
+    borderWidth: 2,
+    alignItems: 'center',
+    justifyContent: 'center'
+  })
+  const [button3TextAtividade, setButton3Text] = useState({
+    color: '#fff',
+    fontSize: 14,
+    fontWeight: 'bold'
+  })
+
+  // setando botao 4
+  const [button4Atividade, setButton4] = useState({
+    width: 40,
+    height: 40,
+    marginHorizontal: 10,
+    marginVertical: 20,
+    borderRadius: 10,
+    backgroundColor: '#186F65',
+    borderColor: '#186F65',
+    borderWidth: 2,
+    alignItems: 'center',
+    justifyContent: 'center'
+  })
+  const [button4TextAtividade, setButton4Text] = useState({
+    color: '#fff',
+    fontSize: 14,
+    fontWeight: 'bold'
+  })
+
+  // lidar com a troca dos botoes
+  const changeButton = (buttonId) => {
+    switch (buttonId) {
+
+      // quando mudar para o botao 1
+      case 1:
+        setAtividadeValor(1)
+        setAtividadeTexto('Acamado')
+
+        // setando o botao atual
+        setButton1(prevState => ({
+          ...prevState,
+          backgroundColor: '#fff'
+        }))
+        setButton1Text(prevState => ({
+          ...prevState,
+          color: '#F28585'
+        }))
+
+        // setando os botoes ao original
+        setButton2(prevState => ({
+          ...prevState,
+          backgroundColor: '#FFA447'
+        }))
+        setButton2Text(prevState => ({
+          ...prevState,
+          color: '#fff'
+        }))
+
+        setButton3(prevState => ({
+          ...prevState,
+          backgroundColor: '#9ADE7B'
+        }))
+        setButton3Text(prevState => ({
+          ...prevState,
+          color: '#fff'
+        }))
+
+        setButton4(prevState => ({
+          ...prevState,
+          backgroundColor: '#186F65'
+        }))
+        setButton4Text(prevState => ({
+          ...prevState,
+          color: '#fff'
+        }))
+        break;
+
+      // quando mudar para o botao 2
+      case 2:
+        setAtividadeValor(2)
+        setAtividadeTexto('Confinado a cadeira')
+
+        // setando o botao atual
+        setButton2(prevState => ({
+          ...prevState,
+          backgroundColor: '#fff'
+        }))
+        setButton2Text(prevState => ({
+          ...prevState,
+          color: '#FFA447'
+        }))
+
+        // setando os botoes ao original
+        setButton1(prevState => ({
+          ...prevState,
+          backgroundColor: '#F28585'
+        }))
+        setButton1Text(prevState => ({
+          ...prevState,
+          color: '#fff'
+        }))
+
+        setButton3(prevState => ({
+          ...prevState,
+          backgroundColor: '#9ADE7B'
+        }))
+        setButton3Text(prevState => ({
+          ...prevState,
+          color: '#fff'
+        }))
+
+        setButton4(prevState => ({
+          ...prevState,
+          backgroundColor: '#186F65'
+        }))
+        setButton4Text(prevState => ({
+          ...prevState,
+          color: '#fff'
+        }))
+        break;
+
+      // quando mudar para o botao 3
+      case 3:
+        setAtividadeValor(3)
+        setAtividadeTexto('Anda ocasionalmente')
+
+        // setando o botao atual
+        setButton3(prevState => ({
+          ...prevState,
+          backgroundColor: '#fff'
+        }))
+        setButton3Text(prevState => ({
+          ...prevState,
+          color: '#9ADE7B'
+        }))
+
+        // setando os botoes ao original
+        setButton1(prevState => ({
+          ...prevState,
+          backgroundColor: '#F28585'
+        }))
+        setButton1Text(prevState => ({
+          ...prevState,
+          color: '#fff'
+        }))
+
+        setButton2(prevState => ({
+          ...prevState,
+          backgroundColor: '#FFA447'
+        }))
+        setButton2Text(prevState => ({
+          ...prevState,
+          color: '#fff'
+        }))
+
+        setButton4(prevState => ({
+          ...prevState,
+          backgroundColor: '#186F65'
+        }))
+        setButton4Text(prevState => ({
+          ...prevState,
+          color: '#fff'
+        }))
+        break;
+
+      // quando mudar para o botao 4
+      case 4:
+        setAtividadeValor(4)
+        setAtividadeTexto('Anda frequentemente')
+
+        // setando o botao atual
+        setButton4(prevState => ({
+          ...prevState,
+          backgroundColor: '#fff'
+        }))
+        setButton4Text(prevState => ({
+          ...prevState,
+          color: '#186F65'
+        }))
+
+        // setando os botoes ao original
+        setButton1(prevState => ({
+          ...prevState,
+          backgroundColor: '#F28585'
+        }))
+        setButton1Text(prevState => ({
+          ...prevState,
+          color: '#fff'
+        }))
+
+        setButton2(prevState => ({
+          ...prevState,
+          backgroundColor: '#FFA447'
+        }))
+        setButton2Text(prevState => ({
+          ...prevState,
+          color: '#fff'
+        }))
+
+        setButton3(prevState => ({
+          ...prevState,
+          backgroundColor: '#9ADE7B'
+        }))
+        setButton3Text(prevState => ({
+          ...prevState,
+          color: '#fff'
+        }))
+        break;
+
+      default:
+        break;
+    }
+  }
+  // ATIVIDADE LOGICA
+  /////////////////////////////////////////////////
+
+  /////////////////////////////////////////////////
   // LOGICA TOTAL
   const [totalFinal, setTotalFinal] = useState()
   const [outputFinal, setOutputFinal] = useState('')
 
-  const atualizarTotalFinal = (percepcaoSensorial, umidade) => {
-    total = percepcaoSensorial + umidade
+  const atualizarTotalFinal = (percepcaoSensorial, umidade, atividade) => {
+    total = percepcaoSensorial + umidade + atividade
     setTotalFinal(total)
 
     if (total < 12) {
@@ -564,11 +832,11 @@ export default function App() {
   }
 
   useEffect(() => {
-    atualizarTotalFinal(valorPercepcaoSensorial, valorUmidade)
-  }, [textoPercepcaoSensorial, textoUmidade])
+    atualizarTotalFinal(valorPercepcaoSensorial, valorUmidade, atividadeValor)
+  }, [textoPercepcaoSensorial, textoUmidade, atividadeValor])
   // LOGICA TOTAL
   /////////////////////////////////////////////////
-  
+
   /////////////////////////////////////////////////
   // RENDENIZACACAO
   return (
@@ -579,7 +847,7 @@ export default function App() {
       <Cabecalho text="ESCALA DE BRADEN" nextPage='escala_de_braden/return' />
       {/* CABECALHO */}
       {/*****************************************/}
-      
+
       {/*****************************************/}
       {/* CONTEUDO PRINCIPAL */}
       <View style={styles.content}>
@@ -600,7 +868,6 @@ export default function App() {
             <View style={{ flexDirection: 'row' }}>
 
               <TouchableOpacity style={button1PercepcaoSensorial} onPress={() => changeButtonPercepcaoSensorial(1)}>
-                {/* este texto vai ser alterado e lido pelo useState constantemente */}
                 <Text style={button1TextPercepcaoSensorial}>1</Text>
               </TouchableOpacity>
 
@@ -638,7 +905,6 @@ export default function App() {
             <View style={{ flexDirection: 'row' }}>
 
               <TouchableOpacity style={button1Umidade} onPress={() => changeButtonUmidade(1)}>
-                {/* este texto vai ser alterado e lido pelo useState constantemente */}
                 <Text style={button1TextUmidade}>1</Text>
               </TouchableOpacity>
 
@@ -663,7 +929,39 @@ export default function App() {
           </View>
           {/*****************************************/}
           {/* umidade form */}
-          
+
+          <View style={styles.formInputs}>
+
+            {/* label */}
+            <Text style={styles.formLabel}>Atividade</Text>
+
+            {/*****************************************/}
+            {/* botoes do formulario */}
+            <View style={{ flexDirection: 'row' }}>
+
+              <TouchableOpacity style={button1Atividade} onPress={() => changeButton(1)}>
+                <Text style={button1TextAtividade}>1</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity style={button2Atividade} onPress={() => changeButton(2)}>
+                <Text style={button2TextAtividade}>2</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity style={button3Atividade} onPress={() => changeButton(3)}>
+                <Text style={button3TextAtividade}>3</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity style={button4Atividade} onPress={() => changeButton(4)}>
+                <Text style={button4TextAtividade}>4</Text>
+              </TouchableOpacity>
+            </View>
+            {/* botoes do formulario */}
+            {/*****************************************/}
+
+            {/* resultado */}
+            <Text style={styles.formResultado}>{atividadeTexto}</Text>
+          </View>
+
         </ScrollView>
         {/* formulario */}
         {/*****************************************/}
@@ -679,8 +977,8 @@ export default function App() {
       </View>
       {/* CONTEUDO PRINCIPAL */}
       {/*****************************************/}
-      
-    </View>  
+
+    </View>
   )
   // RENDENIZACACAO
   /////////////////////////////////////////////////
@@ -706,18 +1004,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 
-  formInputs: { 
-    alignItems: 'center', 
+  formInputs: {
+    alignItems: 'center',
     marginTop: 30,
   },
 
-  formLabel: { 
-    fontSize: 15, 
+  formLabel: {
+    fontSize: 15,
     fontWeight: 'bold'
   },
 
-  formResultado: { 
-    fontSize: 14, 
+  formResultado: {
+    fontSize: 14,
     color: '#555843'
   }
 })
