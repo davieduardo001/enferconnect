@@ -23,12 +23,6 @@ export default function App() {
           <View style={{ flex: 12, width: '100%', alignItems: 'center', justifyContent: 'center' }}>
             {/* Imagem central */}
             <Image source={require('../images/enfermeira1.png')} style={{width: '100%', height: '100%', paddingTop:750,}} />
-          
-            {/* texto principal */}
-              {/*            <View style={{alignItems: 'center'}}>
-              <Text style={{fontSize: 20, textAlign: 'justify', paddingHorizontal: 30, paddingBottom: 90, color: '#003137', }} >Entenda o risco de seus pacientes com precisão através da Escala de Braden️ ou de Morse. </Text>
-            </View>*/}
-
           </View>
           {/* imagem e texto central */}
           {/*****************************************/}

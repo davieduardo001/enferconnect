@@ -279,7 +279,7 @@ switch (buttonId) {
 <View style={styles.formInputs}>
 
     {/* label */}
-    <Text style={styles.formLabel}>Percepcao sensorial</Text>
+    <Text style={styles.formLabel}>EXEMPLO TEXTO</Text>
 
     {/*****************************************/}
     {/* botoes do formulario */}

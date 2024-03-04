@@ -664,9 +664,6 @@ export default function App() {
           {/*****************************************/}
           {/* umidade form */}
           
-
-
-
         </ScrollView>
         {/* formulario */}
         {/*****************************************/}
@@ -711,7 +708,7 @@ const styles = StyleSheet.create({
 
   formInputs: { 
     alignItems: 'center', 
-    marginTop: 10 
+    marginTop: 30,
   },
 
   formLabel: { 
