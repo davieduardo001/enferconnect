@@ -306,7 +306,7 @@ switch (buttonId) {
     {/*****************************************/}
 
     {/* resultado */}
-    <Text style={styles.formResultado}>{text}</Text>
+    <Text style={styles.formResultado}>{texto}</Text>
 </View>
 ```
 
