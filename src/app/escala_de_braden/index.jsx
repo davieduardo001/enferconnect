@@ -829,7 +829,7 @@ export default function App() {
     alignItems: 'center',
     justifyContent: 'center'
   })
-  const [button1Text, setButton1Text] = useState({
+  const [button1Text, setButton1TextMobilidade] = useState({
     color: '#F28585', // este ira mudar constantemente!!
     fontSize: 14,
     fontWeight: 'bold'
@@ -848,7 +848,7 @@ export default function App() {
     alignItems: 'center',
     justifyContent: 'center'
   })
-  const [button2Text, setButton2Text] = useState({
+  const [button2Text, setButton2TextMobilidade] = useState({
     color: '#fff',
     fontSize: 14,
     fontWeight: 'bold'
@@ -867,7 +867,7 @@ export default function App() {
     alignItems: 'center',
     justifyContent: 'center'
   })
-  const [button3Text, setButton3Text] = useState({
+  const [button3Text, setButton3TextMobilidade] = useState({
     color: '#fff',
     fontSize: 14,
     fontWeight: 'bold'
@@ -886,14 +886,14 @@ export default function App() {
     alignItems: 'center',
     justifyContent: 'center'
   })
-  const [button4Text, setButton4Text] = useState({
+  const [button4Text, setButton4TextMobilidade] = useState({
     color: '#fff',
     fontSize: 14,
     fontWeight: 'bold'
   })
 
   // lidar com a troca dos botoes
-  const changeButton = (buttonId) => {
+  const changeButtonMobilidade = (buttonId) => {
     switch (buttonId) {
 
       // quando mudar para o botao 1
@@ -906,7 +906,7 @@ export default function App() {
           ...prevState,
           backgroundColor: '#fff'
         }))
-        setButton1Text(prevState => ({
+        setButton1TextMobilidade(prevState => ({
           ...prevState,
           color: '#F28585'
         }))
@@ -916,7 +916,7 @@ export default function App() {
           ...prevState,
           backgroundColor: '#FFA447'
         }))
-        setButton2Text(prevState => ({
+        setButton2TextMobilidade(prevState => ({
           ...prevState,
           color: '#fff'
         }))
@@ -925,7 +925,7 @@ export default function App() {
           ...prevState,
           backgroundColor: '#9ADE7B'
         }))
-        setButton3Text(prevState => ({
+        setButton3TextMobilidade(prevState => ({
           ...prevState,
           color: '#fff'
         }))
@@ -934,7 +934,7 @@ export default function App() {
           ...prevState,
           backgroundColor: '#186F65'
         }))
-        setButton4Text(prevState => ({
+        setButton4TextMobilidade(prevState => ({
           ...prevState,
           color: '#fff'
         }))
@@ -950,7 +950,7 @@ export default function App() {
           ...prevState,
           backgroundColor: '#fff'
         }))
-        setButton2Text(prevState => ({
+        setButton2TextMobilidade(prevState => ({
           ...prevState,
           color: '#FFA447'
         }))
@@ -960,7 +960,7 @@ export default function App() {
           ...prevState,
           backgroundColor: '#F28585'
         }))
-        setButton1Text(prevState => ({
+        setButton1TextMobilidade(prevState => ({
           ...prevState,
           color: '#fff'
         }))
@@ -969,7 +969,7 @@ export default function App() {
           ...prevState,
           backgroundColor: '#9ADE7B'
         }))
-        setButton3Text(prevState => ({
+        setButton3TextMobilidade(prevState => ({
           ...prevState,
           color: '#fff'
         }))
@@ -978,7 +978,7 @@ export default function App() {
           ...prevState,
           backgroundColor: '#186F65'
         }))
-        setButton4Text(prevState => ({
+        setButton4TextMobilidade(prevState => ({
           ...prevState,
           color: '#fff'
         }))
@@ -994,7 +994,7 @@ export default function App() {
           ...prevState,
           backgroundColor: '#fff'
         }))
-        setButton3Text(prevState => ({
+        setButton3TextMobilidade(prevState => ({
           ...prevState,
           color: '#9ADE7B'
         }))
@@ -1004,7 +1004,7 @@ export default function App() {
           ...prevState,
           backgroundColor: '#F28585'
         }))
-        setButton1Text(prevState => ({
+        setButton1TextMobilidade(prevState => ({
           ...prevState,
           color: '#fff'
         }))
@@ -1013,7 +1013,7 @@ export default function App() {
           ...prevState,
           backgroundColor: '#FFA447'
         }))
-        setButton2Text(prevState => ({
+        setButton2TextMobilidade(prevState => ({
           ...prevState,
           color: '#fff'
         }))
@@ -1022,7 +1022,7 @@ export default function App() {
           ...prevState,
           backgroundColor: '#186F65'
         }))
-        setButton4Text(prevState => ({
+        setButton4TextMobilidade(prevState => ({
           ...prevState,
           color: '#fff'
         }))
@@ -1038,7 +1038,7 @@ export default function App() {
           ...prevState,
           backgroundColor: '#fff'
         }))
-        setButton4Text(prevState => ({
+        setButton4TextMobilidade(prevState => ({
           ...prevState,
           color: '#186F65'
         }))
@@ -1048,7 +1048,7 @@ export default function App() {
           ...prevState,
           backgroundColor: '#F28585'
         }))
-        setButton1Text(prevState => ({
+        setButton1TextMobilidade(prevState => ({
           ...prevState,
           color: '#fff'
         }))
@@ -1057,7 +1057,7 @@ export default function App() {
           ...prevState,
           backgroundColor: '#FFA447'
         }))
-        setButton2Text(prevState => ({
+        setButton2TextMobilidade(prevState => ({
           ...prevState,
           color: '#fff'
         }))
@@ -1066,7 +1066,7 @@ export default function App() {
           ...prevState,
           backgroundColor: '#9ADE7B'
         }))
-        setButton3Text(prevState => ({
+        setButton3TextMobilidade(prevState => ({
           ...prevState,
           color: '#fff'
         }))
@@ -1078,6 +1078,12 @@ export default function App() {
   }
   /////////////////////////////////////////////////
   // MOBILIDADE LOGICA
+
+  // NUTRICAO LOGICA
+  /////////////////////////////////////////////////
+  
+  /////////////////////////////////////////////////
+  // NUTRICAO LOGICA
 
   /////////////////////////////////////////////////
   // LOGICA TOTAL
@@ -1245,20 +1251,20 @@ export default function App() {
             {/* botoes do formulario */}
             <View style={{ flexDirection: 'row' }}>
 
-              <TouchableOpacity style={button1Mobilidade} onPress={() => changeButton(1)}>
+              <TouchableOpacity style={button1Mobilidade} onPress={() => changeButtonMobilidade(1)}>
                 {/* este textoMobilidade vai ser alterado e lido pelo useState constantemente */}
                 <Text style={button1Text}>1</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity style={button2Mobilidade} onPress={() => changeButton(2)}>
+              <TouchableOpacity style={button2Mobilidade} onPress={() => changeButtonMobilidade(2)}>
                 <Text style={button2Text}>2</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity style={button3Mobilidade} onPress={() => changeButton(3)}>
+              <TouchableOpacity style={button3Mobilidade} onPress={() => changeButtonMobilidade(3)}>
                 <Text style={button3Text}>3</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity style={button4Mobilidade} onPress={() => changeButton(4)}>
+              <TouchableOpacity style={button4Mobilidade} onPress={() => changeButtonMobilidade(4)}>
                 <Text style={button4Text}>4</Text>
               </TouchableOpacity>
             </View>
@@ -1270,6 +1276,43 @@ export default function App() {
           </View>
           {/*****************************************/}
           {/* mobilidade form */}
+
+          {/* percepcao nutricao form */}
+          {/*****************************************/}
+          <View style={styles.formInputs}>
+
+            {/* label */}
+            <Text style={styles.formLabel}>LABEL EXEMPLO</Text>
+
+            {/*****************************************/}
+            {/* botoes do formulario */}
+            <View style={{ flexDirection: 'row' }}>
+
+              <TouchableOpacity style={button1} onPress={() => changeButton(1)}>
+                {/* este texto vai ser alterado e lido pelo useState constantemente */}
+                <Text style={button1Text}>1</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity style={button2} onPress={() => changeButton(2)}>
+                <Text style={button2Text}>2</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity style={button3} onPress={() => changeButton(3)}>
+                <Text style={button3Text}>3</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity style={button4} onPress={() => changeButton(4)}>
+                <Text style={button4Text}>4</Text>
+              </TouchableOpacity>
+            </View>
+            {/* botoes do formulario */}
+            {/*****************************************/}
+
+            {/* resultado */}
+            <Text style={styles.formResultado}>{texto}</Text>
+          </View>
+          {/*****************************************/}
+          {/* percepcao nutricao form */}
 
         </ScrollView>
         {/* formulario */}
